@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
     }
 
-    /*@Override
+    @Override
     public void onSaveInstanceState(Bundle outState) {
         outState.putInt("scoreTeamA", scoreTeamA);
         outState.putInt("scoreTeamB", scoreTeamB);
@@ -82,5 +82,5 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamA = savedInstanceState.getInt("scoreTeamA");
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
-    }*/
+    }
 }
