@@ -45,7 +45,7 @@
                     android:layout_marginTop="24dp"
                     android:onClick="addFiveTeamA"
                     android:textStyle="bold"
-                    android:text="TRY" />
+                    android:text="@string/try_label" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -55,7 +55,7 @@
                     android:layout_marginRight="24dp"
                     android:onClick="addTwoTeamA"
                     android:textStyle="bold"
-                    android:text="CONVERSION" />
+                    android:text="@string/conversion_label" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -65,7 +65,7 @@
                     android:layout_marginRight="24dp"
                     android:onClick="addThreeTeamA"
                     android:textStyle="bold"
-                    android:text="PENALTY" />
+                    android:text="@string/penalty_label" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -75,7 +75,7 @@
                     android:layout_marginRight="24dp"
                     android:onClick="addThreeTeamA"
                     android:textStyle="bold"
-                    android:text="DROP-GOAL" />
+                    android:text="@string/drop_goal_label" />
 
             </LinearLayout>
 
@@ -180,7 +180,7 @@
                     android:layout_marginTop="24dp"
                     android:onClick="addFiveTeamB"
                     android:textStyle="bold"
-                    android:text="TRY" />
+                    android:text="@string/try_label" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -190,7 +190,7 @@
                     android:layout_marginRight="24dp"
                     android:onClick="addTwoTeamB"
                     android:textStyle="bold"
-                    android:text="CONVERSION" />
+                    android:text="@string/conversion_label" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -200,7 +200,7 @@
                     android:layout_marginRight="24dp"
                     android:onClick="addThreeTeamB"
                     android:textStyle="bold"
-                    android:text="PENALTY" />
+                    android:text="@string/penalty_label" />
 
                 <Button
                     android:layout_width="match_parent"
@@ -210,7 +210,7 @@
                     android:layout_marginRight="24dp"
                     android:onClick="addThreeTeamB"
                     android:textStyle="bold"
-                    android:text="DROP-GOAL" />
+                    android:text="@string/drop_goal_label" />
 
             </LinearLayout>
 
