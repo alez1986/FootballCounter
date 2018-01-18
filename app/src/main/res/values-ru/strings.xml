@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Счет в Регби</string>
+    <string name="try_label">ПОПЫТКА</string>
+    <string name="conversion_label">РЕАЛИЗАЦИЯ</string>
+    <string name="penalty_label">ПЕНАЛЬТИ</string>
+    <string name="drop_goal_label">ДРОП-ГОЛ</string>
+    <string name="team_a_label">Команда A</string>
+    <string name="team_b_label">Команда B</string>
+    <string name="reset_label">СБРОС</string>
+</resources>
