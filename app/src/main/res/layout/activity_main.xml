@@ -12,21 +12,17 @@
         android:scaleType="fitXY"
         android:src="@drawable/fieldwhite" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        tools:context="com.example.android.footballcounter.MainActivity">
+        android:orientation="horizontal">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            tools:context="com.example.android.footballcounter.MainActivity">
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/team_a"
@@ -34,11 +30,11 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:layout_marginTop="36dp"
-                android:padding="16dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:padding="@dimen/padding"
                 android:text="@string/team_a_label"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/team_fontSize"
                 android:textStyle="bold" />
 
             <TextView
@@ -47,18 +43,18 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:paddingBottom="24dp"
+                android:paddingBottom="@dimen/padding_bottom"
                 android:text="0"
-                android:textColor="#FFFFFF"
-                android:textSize="56sp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/score_fontSize"
                 android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_lr"
+                android:layout_marginRight="@dimen/margin_lr"
                 android:onClick="addFiveTeamA"
                 android:text="@string/try_label"
                 android:textStyle="bold" />
@@ -66,9 +62,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_lr"
+                android:layout_marginRight="@dimen/margin_lr"
                 android:onClick="addTwoTeamA"
                 android:text="@string/conversion_label"
                 android:textStyle="bold" />
@@ -76,9 +72,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_lr"
+                android:layout_marginRight="@dimen/margin_lr"
                 android:onClick="addThreeTeamA"
                 android:text="@string/penalty_label"
                 android:textStyle="bold" />
@@ -86,34 +82,32 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_lr"
+                android:layout_marginRight="@dimen/margin_lr"
                 android:onClick="addThreeTeamA"
                 android:text="@string/drop_goal_label"
                 android:textStyle="bold" />
 
         </LinearLayout>
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="vertical"
-            tools:context="com.example.android.footballcounter.MainActivity">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center"
-                android:layout_marginTop="36dp"
-                android:padding="16dp"
+                android:layout_marginTop="@dimen/margin_top"
+                android:padding="@dimen/padding"
                 android:text="@string/team_b_label"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/colorText"
                 android:textStyle="bold"
-                android:textSize="24sp" />
+                android:textSize="@dimen/team_fontSize" />
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -121,18 +115,18 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
-                android:paddingBottom="24dp"
+                android:paddingBottom="@dimen/padding_bottom"
                 android:text="0"
-                android:textColor="#FFFFFF"
-                android:textSize="56sp"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/score_fontSize"
                 android:textStyle="bold" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_lr"
+                android:layout_marginRight="@dimen/margin_lr"
                 android:onClick="addFiveTeamB"
                 android:text="@string/try_label"
                 android:textStyle="bold" />
@@ -140,9 +134,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_lr"
+                android:layout_marginRight="@dimen/margin_lr"
                 android:onClick="addTwoTeamB"
                 android:text="@string/conversion_label"
                 android:textStyle="bold" />
@@ -150,9 +144,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_lr"
+                android:layout_marginRight="@dimen/margin_lr"
                 android:onClick="addThreeTeamB"
                 android:text="@string/penalty_label"
                 android:textStyle="bold" />
@@ -160,9 +154,9 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="8dp"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
+                android:layout_marginBottom="@dimen/margin_bottom"
+                android:layout_marginLeft="@dimen/margin_lr"
+                android:layout_marginRight="@dimen/margin_lr"
                 android:onClick="addThreeTeamB"
                 android:text="@string/drop_goal_label"
                 android:textStyle="bold" />
@@ -176,9 +170,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
+        android:layout_marginBottom="@dimen/margin_bottom"
         android:onClick="reset"
         android:text="@string/reset_label"
         android:textStyle="bold" />

@@ -12,37 +12,31 @@
         android:scaleType="fitXY"
         android:src="@drawable/fieldwhite" />
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal"
-        tools:context="com.example.android.footballcounter.MainActivity">
+        android:layout_marginTop="@dimen/margin_top"
+        android:orientation="horizontal">
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            tools:context="com.example.android.footballcounter.MainActivity">
+            android:orientation="horizontal">
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:orientation="vertical"
-                tools:context="com.example.android.footballcounter.MainActivity">
+                android:orientation="vertical">
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_lr"
+                    android:layout_marginRight="@dimen/margin_lr"
                     android:onClick="addFiveTeamA"
                     android:textStyle="bold"
                     android:text="@string/try_label" />
@@ -50,9 +44,9 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_lr"
+                    android:layout_marginRight="@dimen/margin_lr"
                     android:onClick="addTwoTeamA"
                     android:textStyle="bold"
                     android:text="@string/conversion_label" />
@@ -60,9 +54,9 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_lr"
+                    android:layout_marginRight="@dimen/margin_lr"
                     android:onClick="addThreeTeamA"
                     android:textStyle="bold"
                     android:text="@string/penalty_label" />
@@ -70,34 +64,32 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_lr"
+                    android:layout_marginRight="@dimen/margin_lr"
                     android:onClick="addThreeTeamA"
                     android:textStyle="bold"
                     android:text="@string/drop_goal_label" />
 
             </LinearLayout>
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="4"
-                android:orientation="vertical"
-                tools:context="com.example.android.footballcounter.MainActivity">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:padding="16dp"
+                    android:padding="@dimen/padding"
                     android:text="@string/team_a_label"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/colorText"
                     android:textStyle="bold"
-                    android:textSize="24sp" />
+                    android:textSize="@dimen/team_fontSize" />
 
                 <TextView
                     android:id="@+id/team_a_score"
@@ -105,43 +97,39 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
-                    android:paddingBottom="24dp"
+                    android:paddingBottom="@dimen/padding_bottom"
                     android:text="0"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/colorText"
                     android:textStyle="bold"
-                    android:textSize="56sp" />
+                    android:textSize="@dimen/score_fontSize" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:orientation="horizontal"
-            tools:context="com.example.android.footballcounter.MainActivity">
+            android:orientation="horizontal">
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="4"
-                android:orientation="vertical"
-                tools:context="com.example.android.footballcounter.MainActivity">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
-                    android:padding="16dp"
+                    android:padding="@dimen/padding"
                     android:text="@string/team_b_label"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/colorText"
                     android:textStyle="bold"
-                    android:textSize="24sp" />
+                    android:textSize="@dimen/team_fontSize" />
 
                 <TextView
                     android:id="@+id/team_b_score"
@@ -149,29 +137,26 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
-                    android:paddingBottom="24dp"
+                    android:paddingBottom="@dimen/padding_bottom"
                     android:text="0"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/colorText"
                     android:textStyle="bold"
-                    android:textSize="56sp" />
+                    android:textSize="@dimen/score_fontSize" />
 
             </LinearLayout>
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:tools="http://schemas.android.com/tools"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
-                android:orientation="vertical"
-                tools:context="com.example.android.footballcounter.MainActivity">
+                android:orientation="vertical">
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_lr"
+                    android:layout_marginRight="@dimen/margin_lr"
                     android:onClick="addFiveTeamB"
                     android:textStyle="bold"
                     android:text="@string/try_label" />
@@ -179,9 +164,9 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_lr"
+                    android:layout_marginRight="@dimen/margin_lr"
                     android:onClick="addTwoTeamB"
                     android:textStyle="bold"
                     android:text="@string/conversion_label" />
@@ -189,9 +174,9 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_lr"
+                    android:layout_marginRight="@dimen/margin_lr"
                     android:onClick="addThreeTeamB"
                     android:textStyle="bold"
                     android:text="@string/penalty_label" />
@@ -199,9 +184,9 @@
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="24dp"
-                    android:layout_marginRight="24dp"
+                    android:layout_marginBottom="@dimen/margin_bottom"
+                    android:layout_marginLeft="@dimen/margin_lr"
+                    android:layout_marginRight="@dimen/margin_lr"
                     android:onClick="addThreeTeamB"
                     android:textStyle="bold"
                     android:text="@string/drop_goal_label" />
@@ -217,9 +202,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="22dp"
-        android:layout_marginRight="22dp"
+        android:layout_marginBottom="@dimen/margin_bottom"
         android:onClick="reset"
         android:textStyle="bold"
         android:text="@string/reset_label" />
