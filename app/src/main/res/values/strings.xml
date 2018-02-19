@@ -7,4 +7,5 @@
     <string name="conversion_label">CONVERSION</string>
     <string name="penalty_label">PENALTY</string>
     <string name="drop_goal_label">DROP-GOAL</string>
+    <string name="initial_score">0</string>
 </resources>

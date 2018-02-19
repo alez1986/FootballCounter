@@ -44,7 +44,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:paddingBottom="@dimen/padding_bottom"
-                android:text="0"
+                android:text="@string/initial_score"
                 android:textColor="@color/colorText"
                 android:textSize="@dimen/score_fontSize"
                 android:textStyle="bold" />
@@ -55,8 +55,9 @@
                 android:layout_marginBottom="@dimen/margin_bottom"
                 android:layout_marginLeft="@dimen/margin_lr"
                 android:layout_marginRight="@dimen/margin_lr"
-                android:onClick="addFiveTeamA"
+                android:onClick="addFive"
                 android:text="@string/try_label"
+                android:tag="teamA"
                 android:textStyle="bold" />
 
             <Button
@@ -65,8 +66,9 @@
                 android:layout_marginBottom="@dimen/margin_bottom"
                 android:layout_marginLeft="@dimen/margin_lr"
                 android:layout_marginRight="@dimen/margin_lr"
-                android:onClick="addTwoTeamA"
+                android:onClick="addTwo"
                 android:text="@string/conversion_label"
+                android:tag="teamA"
                 android:textStyle="bold" />
 
             <Button
@@ -75,8 +77,9 @@
                 android:layout_marginBottom="@dimen/margin_bottom"
                 android:layout_marginLeft="@dimen/margin_lr"
                 android:layout_marginRight="@dimen/margin_lr"
-                android:onClick="addThreeTeamA"
+                android:onClick="addThree"
                 android:text="@string/penalty_label"
+                android:tag="teamA"
                 android:textStyle="bold" />
 
             <Button
@@ -85,8 +88,9 @@
                 android:layout_marginBottom="@dimen/margin_bottom"
                 android:layout_marginLeft="@dimen/margin_lr"
                 android:layout_marginRight="@dimen/margin_lr"
-                android:onClick="addThreeTeamA"
+                android:onClick="addThree"
                 android:text="@string/drop_goal_label"
+                android:tag="teamA"
                 android:textStyle="bold" />
 
         </LinearLayout>
@@ -116,7 +120,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center"
                 android:paddingBottom="@dimen/padding_bottom"
-                android:text="0"
+                android:text="@string/initial_score"
                 android:textColor="@color/colorText"
                 android:textSize="@dimen/score_fontSize"
                 android:textStyle="bold" />
@@ -127,8 +131,9 @@
                 android:layout_marginBottom="@dimen/margin_bottom"
                 android:layout_marginLeft="@dimen/margin_lr"
                 android:layout_marginRight="@dimen/margin_lr"
-                android:onClick="addFiveTeamB"
+                android:onClick="addFive"
                 android:text="@string/try_label"
+                android:tag="teamB"
                 android:textStyle="bold" />
 
             <Button
@@ -137,8 +142,9 @@
                 android:layout_marginBottom="@dimen/margin_bottom"
                 android:layout_marginLeft="@dimen/margin_lr"
                 android:layout_marginRight="@dimen/margin_lr"
-                android:onClick="addTwoTeamB"
+                android:onClick="addTwo"
                 android:text="@string/conversion_label"
+                android:tag="teamB"
                 android:textStyle="bold" />
 
             <Button
@@ -147,8 +153,9 @@
                 android:layout_marginBottom="@dimen/margin_bottom"
                 android:layout_marginLeft="@dimen/margin_lr"
                 android:layout_marginRight="@dimen/margin_lr"
-                android:onClick="addThreeTeamB"
+                android:onClick="addThree"
                 android:text="@string/penalty_label"
+                android:tag="teamB"
                 android:textStyle="bold" />
 
             <Button
@@ -157,8 +164,9 @@
                 android:layout_marginBottom="@dimen/margin_bottom"
                 android:layout_marginLeft="@dimen/margin_lr"
                 android:layout_marginRight="@dimen/margin_lr"
-                android:onClick="addThreeTeamB"
+                android:onClick="addThree"
                 android:text="@string/drop_goal_label"
+                android:tag="teamB"
                 android:textStyle="bold" />
 
         </LinearLayout>
